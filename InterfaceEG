@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyClass m1 = new MyClass();
+            m1.meth1();
+            m1.meth2();
+        }
+    }
+
+    interface A {
+        void meth1();
+        void meth2();
+    }
+
+    class MyClass:A{ 
+
+         public void meth1()
+        {
+            Console.WriteLine("Method 1 Implemented");
+        }
+
+        public void meth2()
+        {
+            Console.WriteLine("Method 2 Implemented");
+        }
+    }
+
+}
